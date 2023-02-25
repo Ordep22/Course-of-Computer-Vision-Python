@@ -1,7 +1,7 @@
 
 import cv2 as cv  ## Importanto as images
 
-img = cv.imread(r'/Users/PedroVitorPereira/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/Projetos-Python/Visão Computacional/2_Detectação de Faces/Images/people1.jpg')
+img = cv.imread(r'/Users/PedroVitorPereira/Documents/GitHub/Python_Projects/course-of-Computer-Vision-Python/2_Face detection/Images/people1.jpg')
 
 ##Em visão computacional é muito interessante reformatar o tamanho da imagem
 #Para isso podemos usar os comando resize
@@ -13,12 +13,12 @@ img_escalacinza = cv.cvtColor(img,cv.COLOR_BGR2GRAY)
 
 #Informar para a biblioteca qual o local do arquivo que contem as informações
 #do algoritmo treinado
-detectorFacial  = cv.CascadeClassifier("haarcascade_frontalface_default.xml")
+detectorFacial  = cv.CascadeClassifier("/Users/PedroVitorPereira/Documents/GitHub/Python_Projects/course-of-Computer-Vision-Python/2_Face detection/Haarcascade/haarcascade_frontalface_default.xml")
 
 #Podemos também ajustar a identificação das faces por meio do parametro scalefactori
 #Esse parâmetro deve ser maior que um. Lembrando que quanto maior que menor será sua eficácia.
 
-deteccoes  = detectorFacial.detectMultiScale(img_escalacinza,scaleFactor= 1.35)
+deteccoes  = detectorFacial.detectMultiScale(img_escalacinza)
 
 '''
 Como é possível observar, o valor para o scaleFctor mais adequado à 

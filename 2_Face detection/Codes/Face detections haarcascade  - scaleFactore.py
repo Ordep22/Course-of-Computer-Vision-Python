@@ -16,9 +16,9 @@ img_escalacinza = cv.cvtColor(img,cv.COLOR_BGR2GRAY)
 detectorFacial  = cv.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 #Podemos também ajustar a identificação das faces por meio do parametro scalefactori
-#Esse parâmetro deve ser maior que um. Lembrando que quanto maior que menor será sua eficácia.
+#Esse parâmetro deve ser maior que um. Lembrando que quanto maior, menor será sua eficácia.
 
-deteccoes  = detectorFacial.detectMultiScale(img_escalacinza)
+deteccoes  = detectorFacial.detectMultiScale(img_escalacinza,scaleFactor= 1.35)
 
 '''
 Como é possível observar, o valor para o scaleFctor mais adequado à 
