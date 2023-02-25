@@ -1,0 +1,56 @@
+\hypertarget{namespace_deteccao_01de_01faces_01e_01olhos}{}\doxysection{Deteccao de faces e olhos Namespace Reference}
+\label{namespace_deteccao_01de_01faces_01e_01olhos}\index{Deteccao de faces e olhos@{Deteccao de faces e olhos}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_ab357f3d4cd18e0241263d1241ce7274f}{detector\+Olhos}} = cv.\+Cascade\+Classifier(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/haarcascade\+\_\+eye.\+xml\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_aa4c456d733989b08bb47e4c0834636e0}{detector\+Facil}} = cv.\+Cascade\+Classifier(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/haarcascade\+\_\+frontalface\+\_\+default.\+xml\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_aed5a172cd34eec8fc9d9d77073bd57ad}{img}} = cv.\+imread(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/Images/people1.\+jpg\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_a9361b0563e4355c6c1ca83958d6ef981}{img\+Cinza}} = cv.\+cvt\+Color(\mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_aed5a172cd34eec8fc9d9d77073bd57ad}{img}},cv.\+COLOR\+\_\+\+BGR2\+GRAY)
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_a54c099ec20bb0631e53c81c1758e8b3c}{deteccoes\+Faces}} = detector\+Facil.\+detect\+Multi\+Scale(\mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_a9361b0563e4355c6c1ca83958d6ef981}{img\+Cinza}},scale\+Factor= 1.\+09,min\+Neighbors=10,min\+Size=(35,35),max\+Size=(150,150))
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_a79d25c6116f309b5b3cdca18f235a739}{deteccoes\+Olhos}} = detector\+Olhos.\+detect\+Multi\+Scale(\mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_a9361b0563e4355c6c1ca83958d6ef981}{img\+Cinza}},scale\+Factor= 1.\+09,min\+Neighbors=10,min\+Size=(15,15),max\+Size=(70,70))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_deteccao_01de_01faces_01e_01olhos_a54c099ec20bb0631e53c81c1758e8b3c}\label{namespace_deteccao_01de_01faces_01e_01olhos_a54c099ec20bb0631e53c81c1758e8b3c}} 
+\index{Deteccao de faces e olhos@{Deteccao de faces e olhos}!deteccoesFaces@{deteccoesFaces}}
+\index{deteccoesFaces@{deteccoesFaces}!Deteccao de faces e olhos@{Deteccao de faces e olhos}}
+\doxysubsubsection{\texorpdfstring{deteccoesFaces}{deteccoesFaces}}
+{\footnotesize\ttfamily cv Deteccao de faces e olhos.\+deteccoes\+Faces = detector\+Facil.\+detect\+Multi\+Scale(\mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_a9361b0563e4355c6c1ca83958d6ef981}{img\+Cinza}},scale\+Factor= 1.\+09,min\+Neighbors=10,min\+Size=(35,35),max\+Size=(150,150))}
+
+\mbox{\Hypertarget{namespace_deteccao_01de_01faces_01e_01olhos_a79d25c6116f309b5b3cdca18f235a739}\label{namespace_deteccao_01de_01faces_01e_01olhos_a79d25c6116f309b5b3cdca18f235a739}} 
+\index{Deteccao de faces e olhos@{Deteccao de faces e olhos}!deteccoesOlhos@{deteccoesOlhos}}
+\index{deteccoesOlhos@{deteccoesOlhos}!Deteccao de faces e olhos@{Deteccao de faces e olhos}}
+\doxysubsubsection{\texorpdfstring{deteccoesOlhos}{deteccoesOlhos}}
+{\footnotesize\ttfamily cv Deteccao de faces e olhos.\+deteccoes\+Olhos = detector\+Olhos.\+detect\+Multi\+Scale(\mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_a9361b0563e4355c6c1ca83958d6ef981}{img\+Cinza}},scale\+Factor= 1.\+09,min\+Neighbors=10,min\+Size=(15,15),max\+Size=(70,70))}
+
+\mbox{\Hypertarget{namespace_deteccao_01de_01faces_01e_01olhos_aa4c456d733989b08bb47e4c0834636e0}\label{namespace_deteccao_01de_01faces_01e_01olhos_aa4c456d733989b08bb47e4c0834636e0}} 
+\index{Deteccao de faces e olhos@{Deteccao de faces e olhos}!detectorFacil@{detectorFacil}}
+\index{detectorFacil@{detectorFacil}!Deteccao de faces e olhos@{Deteccao de faces e olhos}}
+\doxysubsubsection{\texorpdfstring{detectorFacil}{detectorFacil}}
+{\footnotesize\ttfamily cv Deteccao de faces e olhos.\+detector\+Facil = cv.\+Cascade\+Classifier(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/haarcascade\+\_\+frontalface\+\_\+default.\+xml\char`\"{})}
+
+\mbox{\Hypertarget{namespace_deteccao_01de_01faces_01e_01olhos_ab357f3d4cd18e0241263d1241ce7274f}\label{namespace_deteccao_01de_01faces_01e_01olhos_ab357f3d4cd18e0241263d1241ce7274f}} 
+\index{Deteccao de faces e olhos@{Deteccao de faces e olhos}!detectorOlhos@{detectorOlhos}}
+\index{detectorOlhos@{detectorOlhos}!Deteccao de faces e olhos@{Deteccao de faces e olhos}}
+\doxysubsubsection{\texorpdfstring{detectorOlhos}{detectorOlhos}}
+{\footnotesize\ttfamily cv Deteccao de faces e olhos.\+detector\+Olhos = cv.\+Cascade\+Classifier(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/haarcascade\+\_\+eye.\+xml\char`\"{})}
+
+\mbox{\Hypertarget{namespace_deteccao_01de_01faces_01e_01olhos_aed5a172cd34eec8fc9d9d77073bd57ad}\label{namespace_deteccao_01de_01faces_01e_01olhos_aed5a172cd34eec8fc9d9d77073bd57ad}} 
+\index{Deteccao de faces e olhos@{Deteccao de faces e olhos}!img@{img}}
+\index{img@{img}!Deteccao de faces e olhos@{Deteccao de faces e olhos}}
+\doxysubsubsection{\texorpdfstring{img}{img}}
+{\footnotesize\ttfamily cv Deteccao de faces e olhos.\+img = cv.\+imread(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/Images/people1.\+jpg\char`\"{})}
+
+\mbox{\Hypertarget{namespace_deteccao_01de_01faces_01e_01olhos_a9361b0563e4355c6c1ca83958d6ef981}\label{namespace_deteccao_01de_01faces_01e_01olhos_a9361b0563e4355c6c1ca83958d6ef981}} 
+\index{Deteccao de faces e olhos@{Deteccao de faces e olhos}!imgCinza@{imgCinza}}
+\index{imgCinza@{imgCinza}!Deteccao de faces e olhos@{Deteccao de faces e olhos}}
+\doxysubsubsection{\texorpdfstring{imgCinza}{imgCinza}}
+{\footnotesize\ttfamily cv Deteccao de faces e olhos.\+img\+Cinza = cv.\+cvt\+Color(\mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_aed5a172cd34eec8fc9d9d77073bd57ad}{img}},cv.\+COLOR\+\_\+\+BGR2\+GRAY)}
+

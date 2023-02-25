@@ -1,0 +1,40 @@
+\hypertarget{namespace_deteccao_01de_01carros}{}\doxysection{Deteccao de carros Namespace Reference}
+\label{namespace_deteccao_01de_01carros}\index{Deteccao de carros@{Deteccao de carros}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01carros_ac61d45ffe1390e15d934a1ec8a2c549a}{carros\+Identificados}} = cv.\+Cascade\+Classifier(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/cars.\+xml\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01carros_a3b24ffd2154064cfcecbf28e0f3eb92c}{imagem\+Original}} = cv.\+imread(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/Images/car.\+jpg\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01carros_a040d399dd9b259b917ed238ecf730f95}{imagem\+Cinza}} = cv.\+cvt\+Color(\mbox{\hyperlink{namespace_deteccao_01de_01carros_a3b24ffd2154064cfcecbf28e0f3eb92c}{imagem\+Original}},cv.\+COLOR\+\_\+\+BGR2\+GRAY)
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01carros_a50bb2a8e94a1478e3025540d96d03263}{carro\+Detectados}} = carros\+Identificados.\+detect\+Multi\+Scale(\mbox{\hyperlink{namespace_deteccao_01de_01carros_a040d399dd9b259b917ed238ecf730f95}{imagem\+Cinza}},scale\+Factor=1.\+03,min\+Neighbors=5)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_deteccao_01de_01carros_a50bb2a8e94a1478e3025540d96d03263}\label{namespace_deteccao_01de_01carros_a50bb2a8e94a1478e3025540d96d03263}} 
+\index{Deteccao de carros@{Deteccao de carros}!carroDetectados@{carroDetectados}}
+\index{carroDetectados@{carroDetectados}!Deteccao de carros@{Deteccao de carros}}
+\doxysubsubsection{\texorpdfstring{carroDetectados}{carroDetectados}}
+{\footnotesize\ttfamily cv Deteccao de carros.\+carro\+Detectados = carros\+Identificados.\+detect\+Multi\+Scale(\mbox{\hyperlink{namespace_deteccao_01de_01carros_a040d399dd9b259b917ed238ecf730f95}{imagem\+Cinza}},scale\+Factor=1.\+03,min\+Neighbors=5)}
+
+\mbox{\Hypertarget{namespace_deteccao_01de_01carros_ac61d45ffe1390e15d934a1ec8a2c549a}\label{namespace_deteccao_01de_01carros_ac61d45ffe1390e15d934a1ec8a2c549a}} 
+\index{Deteccao de carros@{Deteccao de carros}!carrosIdentificados@{carrosIdentificados}}
+\index{carrosIdentificados@{carrosIdentificados}!Deteccao de carros@{Deteccao de carros}}
+\doxysubsubsection{\texorpdfstring{carrosIdentificados}{carrosIdentificados}}
+{\footnotesize\ttfamily cv Deteccao de carros.\+carros\+Identificados = cv.\+Cascade\+Classifier(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/cars.\+xml\char`\"{})}
+
+\mbox{\Hypertarget{namespace_deteccao_01de_01carros_a040d399dd9b259b917ed238ecf730f95}\label{namespace_deteccao_01de_01carros_a040d399dd9b259b917ed238ecf730f95}} 
+\index{Deteccao de carros@{Deteccao de carros}!imagemCinza@{imagemCinza}}
+\index{imagemCinza@{imagemCinza}!Deteccao de carros@{Deteccao de carros}}
+\doxysubsubsection{\texorpdfstring{imagemCinza}{imagemCinza}}
+{\footnotesize\ttfamily cv Deteccao de carros.\+imagem\+Cinza = cv.\+cvt\+Color(\mbox{\hyperlink{namespace_deteccao_01de_01carros_a3b24ffd2154064cfcecbf28e0f3eb92c}{imagem\+Original}},cv.\+COLOR\+\_\+\+BGR2\+GRAY)}
+
+\mbox{\Hypertarget{namespace_deteccao_01de_01carros_a3b24ffd2154064cfcecbf28e0f3eb92c}\label{namespace_deteccao_01de_01carros_a3b24ffd2154064cfcecbf28e0f3eb92c}} 
+\index{Deteccao de carros@{Deteccao de carros}!imagemOriginal@{imagemOriginal}}
+\index{imagemOriginal@{imagemOriginal}!Deteccao de carros@{Deteccao de carros}}
+\doxysubsubsection{\texorpdfstring{imagemOriginal}{imagemOriginal}}
+{\footnotesize\ttfamily cv Deteccao de carros.\+imagem\+Original = cv.\+imread(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/Images/car.\+jpg\char`\"{})}
+

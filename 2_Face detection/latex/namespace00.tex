@@ -1,0 +1,56 @@
+\hypertarget{namespace00}{}\doxysection{00 Namespace Reference}
+\label{namespace00}\index{00@{00}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+cv \mbox{\hyperlink{namespace00_aa50af1358f825d5594ca81213bd9f554}{img}} = cv.\+imread(r\textquotesingle{}people1.\+jpg\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Importanto as images. \end{DoxyCompactList}\item 
+cv \mbox{\hyperlink{namespace00_a30913c9ee9aa396404ec4bcf5106070d}{img\+\_\+ajustada}} = cv.\+resize(\mbox{\hyperlink{namespace00_aa50af1358f825d5594ca81213bd9f554}{img}},(800,600))
+\begin{DoxyCompactList}\small\item\em Em visão computacional é muito interessante reformatar o tamanho da imagem Para isso podemos usar os comando resize Reajustando a imagem. \end{DoxyCompactList}\item 
+cv \mbox{\hyperlink{namespace00_a1bfedf54e6e0f984ad09afad0819bba5}{img\+\_\+escalacinza}} = cv.\+cvt\+Color(\mbox{\hyperlink{namespace00_aa50af1358f825d5594ca81213bd9f554}{img}},cv.\+COLOR\+\_\+\+BGR2\+GRAY)
+\item 
+cv \mbox{\hyperlink{namespace00_a22d3fdbff2d4ef51a266762f40261558}{detector\+Facial}} = cv.\+Cascade\+Classifier(\char`\"{}haarcascade\+\_\+frontalface\+\_\+default.\+xml\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace00_a0a4fb375d2be27c822e4fd0b645c95d5}{deteccoes}} = detector\+Facial.\+detect\+Multi\+Scale(\mbox{\hyperlink{namespace00_a1bfedf54e6e0f984ad09afad0819bba5}{img\+\_\+escalacinza}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace00_a0a4fb375d2be27c822e4fd0b645c95d5}\label{namespace00_a0a4fb375d2be27c822e4fd0b645c95d5}} 
+\index{00@{00}!deteccoes@{deteccoes}}
+\index{deteccoes@{deteccoes}!00@{00}}
+\doxysubsubsection{\texorpdfstring{deteccoes}{deteccoes}}
+{\footnotesize\ttfamily cv 00.deteccoes = detector\+Facial.\+detect\+Multi\+Scale(\mbox{\hyperlink{namespace00_a1bfedf54e6e0f984ad09afad0819bba5}{img\+\_\+escalacinza}})}
+
+\mbox{\Hypertarget{namespace00_a22d3fdbff2d4ef51a266762f40261558}\label{namespace00_a22d3fdbff2d4ef51a266762f40261558}} 
+\index{00@{00}!detectorFacial@{detectorFacial}}
+\index{detectorFacial@{detectorFacial}!00@{00}}
+\doxysubsubsection{\texorpdfstring{detectorFacial}{detectorFacial}}
+{\footnotesize\ttfamily cv 00.detector\+Facial = cv.\+Cascade\+Classifier(\char`\"{}haarcascade\+\_\+frontalface\+\_\+default.\+xml\char`\"{})}
+
+\mbox{\Hypertarget{namespace00_aa50af1358f825d5594ca81213bd9f554}\label{namespace00_aa50af1358f825d5594ca81213bd9f554}} 
+\index{00@{00}!img@{img}}
+\index{img@{img}!00@{00}}
+\doxysubsubsection{\texorpdfstring{img}{img}}
+{\footnotesize\ttfamily cv 00.img = cv.\+imread(r\textquotesingle{}people1.\+jpg\textquotesingle{})}
+
+
+
+Importanto as images. 
+
+\mbox{\Hypertarget{namespace00_a30913c9ee9aa396404ec4bcf5106070d}\label{namespace00_a30913c9ee9aa396404ec4bcf5106070d}} 
+\index{00@{00}!img\_ajustada@{img\_ajustada}}
+\index{img\_ajustada@{img\_ajustada}!00@{00}}
+\doxysubsubsection{\texorpdfstring{img\_ajustada}{img\_ajustada}}
+{\footnotesize\ttfamily cv 00.img\+\_\+ajustada = cv.\+resize(\mbox{\hyperlink{namespace00_aa50af1358f825d5594ca81213bd9f554}{img}},(800,600))}
+
+
+
+Em visão computacional é muito interessante reformatar o tamanho da imagem Para isso podemos usar os comando resize Reajustando a imagem. 
+
+\mbox{\Hypertarget{namespace00_a1bfedf54e6e0f984ad09afad0819bba5}\label{namespace00_a1bfedf54e6e0f984ad09afad0819bba5}} 
+\index{00@{00}!img\_escalacinza@{img\_escalacinza}}
+\index{img\_escalacinza@{img\_escalacinza}!00@{00}}
+\doxysubsubsection{\texorpdfstring{img\_escalacinza}{img\_escalacinza}}
+{\footnotesize\ttfamily cv 00.img\+\_\+escalacinza = cv.\+cvt\+Color(\mbox{\hyperlink{namespace00_aa50af1358f825d5594ca81213bd9f554}{img}},cv.\+COLOR\+\_\+\+BGR2\+GRAY)}
+

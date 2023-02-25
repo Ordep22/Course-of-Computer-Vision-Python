@@ -1,0 +1,18 @@
+\hypertarget{_deteccao_01de_01relogios_8py}{}\doxysection{Deteccao de relogios.\+py File Reference}
+\label{_deteccao_01de_01relogios_8py}\index{Deteccao de relogios.py@{Deteccao de relogios.py}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_deteccao_01de_01relogios}{Deteccao de relogios}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01relogios_a0f0ff1b8dc7f3c92352ba8e691d2d284}{Deteccao de relogios.\+detecta\+Relegios}} = cv.\+Cascade\+Classifier(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/clocks.\+xml\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01relogios_a62df51940ed6e11c72ab0d4df25c3a74}{Deteccao de relogios.\+imagem\+Original}} = cv.\+imread(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/Images/clock.\+jpg\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01relogios_a42e7c6da02282b39cbd58f57f8a8a68c}{Deteccao de relogios.\+imagem\+Cinza}} = cv.\+cvt\+Color(imagem\+Original,cv.\+COLOR\+\_\+\+BGR2\+GRAY)
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01relogios_a528211558cc31e7bf9ddf4c54df1d86e}{Deteccao de relogios.\+relogios\+Identificados}} = detecta\+Relegios.\+detect\+Multi\+Scale(imagem\+Cinza,scale\+Factor=1.\+03,min\+Neighbors=1)
+\end{DoxyCompactItemize}

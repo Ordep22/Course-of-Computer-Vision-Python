@@ -1,0 +1,18 @@
+\hypertarget{_deteccao_01de_01corpo_8py}{}\doxysection{Deteccao de corpo.\+py File Reference}
+\label{_deteccao_01de_01corpo_8py}\index{Deteccao de corpo.py@{Deteccao de corpo.py}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_deteccao_01de_01corpo}{Deteccao de corpo}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01corpo_ab2e4a4873896231492b2c74131ad1dc4}{Deteccao de corpo.\+classificadore}} = cv.\+Cascade\+Classifier(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/fullbody.\+xml\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01corpo_a698d7f58d862a2669e0aeeea5bd88f5f}{Deteccao de corpo.\+imagem\+Original}} = cv.\+imread(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/Images/people3.\+jpg\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01corpo_a5d5b23511fc67e9ae8afc28dbeefcc7f}{Deteccao de corpo.\+imgem\+Cinza}} = cv.\+cvt\+Color(imagem\+Original,cv.\+COLOR\+\_\+\+BGR2\+GRAY)
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01corpo_a6c32ced0773b58a34d4084d6db2b9a20}{Deteccao de corpo.\+corpor\+Identificado}} = classificadore.\+detect\+Multi\+Scale(imagem\+Original, scale\+Factor=1.\+001,min\+Neighbors=7,flags=None,min\+Size=(60,60),max\+Size=(150,200))
+\end{DoxyCompactItemize}

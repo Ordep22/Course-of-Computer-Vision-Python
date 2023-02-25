@@ -1,0 +1,56 @@
+\hypertarget{namespace_deteccao_01de_01faces_01haarcascade}{}\doxysection{Deteccao de faces haarcascade Namespace Reference}
+\label{namespace_deteccao_01de_01faces_01haarcascade}\index{Deteccao de faces haarcascade@{Deteccao de faces haarcascade}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01haarcascade_af6fc04f4399737728c0811397e7b5bab}{img}} = cv.\+imread(r\textquotesingle{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/Images/people1.\+jpg\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Importanto as images. \end{DoxyCompactList}\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01haarcascade_a3b36bd8836b5629140105042a46fe054}{img\+\_\+ajustada}} = cv.\+resize(\mbox{\hyperlink{namespace_deteccao_01de_01faces_01haarcascade_af6fc04f4399737728c0811397e7b5bab}{img}},(800,600))
+\begin{DoxyCompactList}\small\item\em Em visão computacional é muito interessante reformatar o tamanho da imagem Para isso podemos usar os comando resize Reajustando a imagem. \end{DoxyCompactList}\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01haarcascade_a98fd7e6a6a3657d943d767fa1c03f7a0}{img\+\_\+escalacinza}} = cv.\+cvt\+Color(\mbox{\hyperlink{namespace_deteccao_01de_01faces_01haarcascade_af6fc04f4399737728c0811397e7b5bab}{img}},cv.\+COLOR\+\_\+\+BGR2\+GRAY)
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01haarcascade_a443d27183f2bac1d79cb5129d6ccd994}{detector\+Facial}} = cv.\+Cascade\+Classifier(\char`\"{}haarcascade\+\_\+frontalface\+\_\+default.\+xml\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01haarcascade_a906006077fa36ab28a1be1a04b8082db}{deteccoes}} = detector\+Facial.\+detect\+Multi\+Scale(\mbox{\hyperlink{namespace_deteccao_01de_01faces_01haarcascade_a98fd7e6a6a3657d943d767fa1c03f7a0}{img\+\_\+escalacinza}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_deteccao_01de_01faces_01haarcascade_a906006077fa36ab28a1be1a04b8082db}\label{namespace_deteccao_01de_01faces_01haarcascade_a906006077fa36ab28a1be1a04b8082db}} 
+\index{Deteccao de faces haarcascade@{Deteccao de faces haarcascade}!deteccoes@{deteccoes}}
+\index{deteccoes@{deteccoes}!Deteccao de faces haarcascade@{Deteccao de faces haarcascade}}
+\doxysubsubsection{\texorpdfstring{deteccoes}{deteccoes}}
+{\footnotesize\ttfamily cv Deteccao de faces haarcascade.\+deteccoes = detector\+Facial.\+detect\+Multi\+Scale(\mbox{\hyperlink{namespace_deteccao_01de_01faces_01haarcascade_a98fd7e6a6a3657d943d767fa1c03f7a0}{img\+\_\+escalacinza}})}
+
+\mbox{\Hypertarget{namespace_deteccao_01de_01faces_01haarcascade_a443d27183f2bac1d79cb5129d6ccd994}\label{namespace_deteccao_01de_01faces_01haarcascade_a443d27183f2bac1d79cb5129d6ccd994}} 
+\index{Deteccao de faces haarcascade@{Deteccao de faces haarcascade}!detectorFacial@{detectorFacial}}
+\index{detectorFacial@{detectorFacial}!Deteccao de faces haarcascade@{Deteccao de faces haarcascade}}
+\doxysubsubsection{\texorpdfstring{detectorFacial}{detectorFacial}}
+{\footnotesize\ttfamily cv Deteccao de faces haarcascade.\+detector\+Facial = cv.\+Cascade\+Classifier(\char`\"{}haarcascade\+\_\+frontalface\+\_\+default.\+xml\char`\"{})}
+
+\mbox{\Hypertarget{namespace_deteccao_01de_01faces_01haarcascade_af6fc04f4399737728c0811397e7b5bab}\label{namespace_deteccao_01de_01faces_01haarcascade_af6fc04f4399737728c0811397e7b5bab}} 
+\index{Deteccao de faces haarcascade@{Deteccao de faces haarcascade}!img@{img}}
+\index{img@{img}!Deteccao de faces haarcascade@{Deteccao de faces haarcascade}}
+\doxysubsubsection{\texorpdfstring{img}{img}}
+{\footnotesize\ttfamily cv Deteccao de faces haarcascade.\+img = cv.\+imread(r\textquotesingle{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/Images/people1.\+jpg\textquotesingle{})}
+
+
+
+Importanto as images. 
+
+\mbox{\Hypertarget{namespace_deteccao_01de_01faces_01haarcascade_a3b36bd8836b5629140105042a46fe054}\label{namespace_deteccao_01de_01faces_01haarcascade_a3b36bd8836b5629140105042a46fe054}} 
+\index{Deteccao de faces haarcascade@{Deteccao de faces haarcascade}!img\_ajustada@{img\_ajustada}}
+\index{img\_ajustada@{img\_ajustada}!Deteccao de faces haarcascade@{Deteccao de faces haarcascade}}
+\doxysubsubsection{\texorpdfstring{img\_ajustada}{img\_ajustada}}
+{\footnotesize\ttfamily cv Deteccao de faces haarcascade.\+img\+\_\+ajustada = cv.\+resize(\mbox{\hyperlink{namespace_deteccao_01de_01faces_01haarcascade_af6fc04f4399737728c0811397e7b5bab}{img}},(800,600))}
+
+
+
+Em visão computacional é muito interessante reformatar o tamanho da imagem Para isso podemos usar os comando resize Reajustando a imagem. 
+
+\mbox{\Hypertarget{namespace_deteccao_01de_01faces_01haarcascade_a98fd7e6a6a3657d943d767fa1c03f7a0}\label{namespace_deteccao_01de_01faces_01haarcascade_a98fd7e6a6a3657d943d767fa1c03f7a0}} 
+\index{Deteccao de faces haarcascade@{Deteccao de faces haarcascade}!img\_escalacinza@{img\_escalacinza}}
+\index{img\_escalacinza@{img\_escalacinza}!Deteccao de faces haarcascade@{Deteccao de faces haarcascade}}
+\doxysubsubsection{\texorpdfstring{img\_escalacinza}{img\_escalacinza}}
+{\footnotesize\ttfamily cv Deteccao de faces haarcascade.\+img\+\_\+escalacinza = cv.\+cvt\+Color(\mbox{\hyperlink{namespace_deteccao_01de_01faces_01haarcascade_af6fc04f4399737728c0811397e7b5bab}{img}},cv.\+COLOR\+\_\+\+BGR2\+GRAY)}
+

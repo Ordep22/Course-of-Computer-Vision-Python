@@ -1,0 +1,18 @@
+\hypertarget{_deteccao_01de_01carros_8py}{}\doxysection{Deteccao de carros.\+py File Reference}
+\label{_deteccao_01de_01carros_8py}\index{Deteccao de carros.py@{Deteccao de carros.py}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_deteccao_01de_01carros}{Deteccao de carros}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01carros_ac61d45ffe1390e15d934a1ec8a2c549a}{Deteccao de carros.\+carros\+Identificados}} = cv.\+Cascade\+Classifier(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/cars.\+xml\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01carros_a3b24ffd2154064cfcecbf28e0f3eb92c}{Deteccao de carros.\+imagem\+Original}} = cv.\+imread(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/Images/car.\+jpg\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01carros_a040d399dd9b259b917ed238ecf730f95}{Deteccao de carros.\+imagem\+Cinza}} = cv.\+cvt\+Color(imagem\+Original,cv.\+COLOR\+\_\+\+BGR2\+GRAY)
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01carros_a50bb2a8e94a1478e3025540d96d03263}{Deteccao de carros.\+carro\+Detectados}} = carros\+Identificados.\+detect\+Multi\+Scale(imagem\+Cinza,scale\+Factor=1.\+03,min\+Neighbors=5)
+\end{DoxyCompactItemize}

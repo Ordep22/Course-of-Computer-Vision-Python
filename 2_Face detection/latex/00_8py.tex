@@ -1,0 +1,20 @@
+\hypertarget{00_8py}{}\doxysection{00.py File Reference}
+\label{00_8py}\index{00.py@{00.py}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace00}{00}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+cv \mbox{\hyperlink{namespace00_aa50af1358f825d5594ca81213bd9f554}{00.\+img}} = cv.\+imread(r\textquotesingle{}people1.\+jpg\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Importanto as images. \end{DoxyCompactList}\item 
+cv \mbox{\hyperlink{namespace00_a30913c9ee9aa396404ec4bcf5106070d}{00.\+img\+\_\+ajustada}} = cv.\+resize(img,(800,600))
+\begin{DoxyCompactList}\small\item\em Em visão computacional é muito interessante reformatar o tamanho da imagem Para isso podemos usar os comando resize Reajustando a imagem. \end{DoxyCompactList}\item 
+cv \mbox{\hyperlink{namespace00_a1bfedf54e6e0f984ad09afad0819bba5}{00.\+img\+\_\+escalacinza}} = cv.\+cvt\+Color(img,cv.\+COLOR\+\_\+\+BGR2\+GRAY)
+\item 
+cv \mbox{\hyperlink{namespace00_a22d3fdbff2d4ef51a266762f40261558}{00.\+detector\+Facial}} = cv.\+Cascade\+Classifier(\char`\"{}haarcascade\+\_\+frontalface\+\_\+default.\+xml\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace00_a0a4fb375d2be27c822e4fd0b645c95d5}{00.\+deteccoes}} = detector\+Facial.\+detect\+Multi\+Scale(img\+\_\+escalacinza)
+\end{DoxyCompactItemize}

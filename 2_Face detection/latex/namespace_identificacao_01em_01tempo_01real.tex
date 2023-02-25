@@ -1,0 +1,80 @@
+\hypertarget{namespace_identificacao_01em_01tempo_01real}{}\doxysection{Identificacao em tempo real Namespace Reference}
+\label{namespace_identificacao_01em_01tempo_01real}\index{Identificacao em tempo real@{Identificacao em tempo real}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+cv \mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_a211feb8823600c87a72510ef36aa6c68}{identificador\+Faces}} = cv.\+Cascade\+Classifier(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/Haarcascade/haarcascade\+\_\+frontalface\+\_\+default.\+xml\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_a3ced0fc86835f8a3274c3e0d422180b7}{captura\+Imagens}} = cv.\+Video\+Capture(0)
+\item 
+\mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_a807c713a2880c72deb4d4a0e4dad7a40}{status}}
+\item 
+\mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_ab6c50e6735f62d9b82f8559a2fa5c8df}{frame}}
+\item 
+cv \mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_a27894f26255d95eb230256188c3f26c0}{frame\+Cinza}} = cv.\+cvt\+Color(\mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_ab6c50e6735f62d9b82f8559a2fa5c8df}{frame}}\mbox{[}105\+:550,500\+:850\mbox{]}, cv.\+COLOR\+\_\+\+BGR2\+GRAY)
+\item 
+\mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_a188ec26d3a28f9edbbd21e7d80dd3ad2}{try}} \+:
+\item 
+cv \mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_ad627482a62dd414844b3f184e3fecb6b}{faces\+Identificadas}} = identificador\+Faces.\+detect\+Multi\+Scale(\mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_a27894f26255d95eb230256188c3f26c0}{frame\+Cinza}},scale\+Factor=1.\+2, min\+Neighbors=5, min\+Size=(150,150))
+\item 
+\mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_a172d53b81799d955fd14cdb4a15ec6c6}{except}} \+:
+\item 
+cv \mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_a431e1150c195f85779ec81f1fe833070}{key}} = cv.\+wait\+Key(5)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_identificacao_01em_01tempo_01real_a3ced0fc86835f8a3274c3e0d422180b7}\label{namespace_identificacao_01em_01tempo_01real_a3ced0fc86835f8a3274c3e0d422180b7}} 
+\index{Identificacao em tempo real@{Identificacao em tempo real}!capturaImagens@{capturaImagens}}
+\index{capturaImagens@{capturaImagens}!Identificacao em tempo real@{Identificacao em tempo real}}
+\doxysubsubsection{\texorpdfstring{capturaImagens}{capturaImagens}}
+{\footnotesize\ttfamily cv Identificacao em tempo real.\+captura\+Imagens = cv.\+Video\+Capture(0)}
+
+\mbox{\Hypertarget{namespace_identificacao_01em_01tempo_01real_a172d53b81799d955fd14cdb4a15ec6c6}\label{namespace_identificacao_01em_01tempo_01real_a172d53b81799d955fd14cdb4a15ec6c6}} 
+\index{Identificacao em tempo real@{Identificacao em tempo real}!except@{except}}
+\index{except@{except}!Identificacao em tempo real@{Identificacao em tempo real}}
+\doxysubsubsection{\texorpdfstring{except}{except}}
+{\footnotesize\ttfamily Identificacao em tempo real.\+except \+:}
+
+\mbox{\Hypertarget{namespace_identificacao_01em_01tempo_01real_ad627482a62dd414844b3f184e3fecb6b}\label{namespace_identificacao_01em_01tempo_01real_ad627482a62dd414844b3f184e3fecb6b}} 
+\index{Identificacao em tempo real@{Identificacao em tempo real}!facesIdentificadas@{facesIdentificadas}}
+\index{facesIdentificadas@{facesIdentificadas}!Identificacao em tempo real@{Identificacao em tempo real}}
+\doxysubsubsection{\texorpdfstring{facesIdentificadas}{facesIdentificadas}}
+{\footnotesize\ttfamily cv Identificacao em tempo real.\+faces\+Identificadas = identificador\+Faces.\+detect\+Multi\+Scale(\mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_a27894f26255d95eb230256188c3f26c0}{frame\+Cinza}},scale\+Factor=1.\+2, min\+Neighbors=5, min\+Size=(150,150))}
+
+\mbox{\Hypertarget{namespace_identificacao_01em_01tempo_01real_ab6c50e6735f62d9b82f8559a2fa5c8df}\label{namespace_identificacao_01em_01tempo_01real_ab6c50e6735f62d9b82f8559a2fa5c8df}} 
+\index{Identificacao em tempo real@{Identificacao em tempo real}!frame@{frame}}
+\index{frame@{frame}!Identificacao em tempo real@{Identificacao em tempo real}}
+\doxysubsubsection{\texorpdfstring{frame}{frame}}
+{\footnotesize\ttfamily Identificacao em tempo real.\+frame}
+
+\mbox{\Hypertarget{namespace_identificacao_01em_01tempo_01real_a27894f26255d95eb230256188c3f26c0}\label{namespace_identificacao_01em_01tempo_01real_a27894f26255d95eb230256188c3f26c0}} 
+\index{Identificacao em tempo real@{Identificacao em tempo real}!frameCinza@{frameCinza}}
+\index{frameCinza@{frameCinza}!Identificacao em tempo real@{Identificacao em tempo real}}
+\doxysubsubsection{\texorpdfstring{frameCinza}{frameCinza}}
+{\footnotesize\ttfamily cv Identificacao em tempo real.\+frame\+Cinza = cv.\+cvt\+Color(\mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_ab6c50e6735f62d9b82f8559a2fa5c8df}{frame}}\mbox{[}105\+:550,500\+:850\mbox{]}, cv.\+COLOR\+\_\+\+BGR2\+GRAY)}
+
+\mbox{\Hypertarget{namespace_identificacao_01em_01tempo_01real_a211feb8823600c87a72510ef36aa6c68}\label{namespace_identificacao_01em_01tempo_01real_a211feb8823600c87a72510ef36aa6c68}} 
+\index{Identificacao em tempo real@{Identificacao em tempo real}!identificadorFaces@{identificadorFaces}}
+\index{identificadorFaces@{identificadorFaces}!Identificacao em tempo real@{Identificacao em tempo real}}
+\doxysubsubsection{\texorpdfstring{identificadorFaces}{identificadorFaces}}
+{\footnotesize\ttfamily cv Identificacao em tempo real.\+identificador\+Faces = cv.\+Cascade\+Classifier(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/Haarcascade/haarcascade\+\_\+frontalface\+\_\+default.\+xml\char`\"{})}
+
+\mbox{\Hypertarget{namespace_identificacao_01em_01tempo_01real_a431e1150c195f85779ec81f1fe833070}\label{namespace_identificacao_01em_01tempo_01real_a431e1150c195f85779ec81f1fe833070}} 
+\index{Identificacao em tempo real@{Identificacao em tempo real}!key@{key}}
+\index{key@{key}!Identificacao em tempo real@{Identificacao em tempo real}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily cv Identificacao em tempo real.\+key = cv.\+wait\+Key(5)}
+
+\mbox{\Hypertarget{namespace_identificacao_01em_01tempo_01real_a807c713a2880c72deb4d4a0e4dad7a40}\label{namespace_identificacao_01em_01tempo_01real_a807c713a2880c72deb4d4a0e4dad7a40}} 
+\index{Identificacao em tempo real@{Identificacao em tempo real}!status@{status}}
+\index{status@{status}!Identificacao em tempo real@{Identificacao em tempo real}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily Identificacao em tempo real.\+status}
+
+\mbox{\Hypertarget{namespace_identificacao_01em_01tempo_01real_a188ec26d3a28f9edbbd21e7d80dd3ad2}\label{namespace_identificacao_01em_01tempo_01real_a188ec26d3a28f9edbbd21e7d80dd3ad2}} 
+\index{Identificacao em tempo real@{Identificacao em tempo real}!try@{try}}
+\index{try@{try}!Identificacao em tempo real@{Identificacao em tempo real}}
+\doxysubsubsection{\texorpdfstring{try}{try}}
+{\footnotesize\ttfamily Identificacao em tempo real.\+try \+:}
+

@@ -1,0 +1,22 @@
+\hypertarget{_deteccao_01de_01faces_01e_01olhos_8py}{}\doxysection{Deteccao de faces e olhos.\+py File Reference}
+\label{_deteccao_01de_01faces_01e_01olhos_8py}\index{Deteccao de faces e olhos.py@{Deteccao de faces e olhos.py}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos}{Deteccao de faces e olhos}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_ab357f3d4cd18e0241263d1241ce7274f}{Deteccao de faces e olhos.\+detector\+Olhos}} = cv.\+Cascade\+Classifier(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/haarcascade\+\_\+eye.\+xml\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_aa4c456d733989b08bb47e4c0834636e0}{Deteccao de faces e olhos.\+detector\+Facil}} = cv.\+Cascade\+Classifier(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/haarcascade\+\_\+frontalface\+\_\+default.\+xml\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_aed5a172cd34eec8fc9d9d77073bd57ad}{Deteccao de faces e olhos.\+img}} = cv.\+imread(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/Images/people1.\+jpg\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_a9361b0563e4355c6c1ca83958d6ef981}{Deteccao de faces e olhos.\+img\+Cinza}} = cv.\+cvt\+Color(img,cv.\+COLOR\+\_\+\+BGR2\+GRAY)
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_a54c099ec20bb0631e53c81c1758e8b3c}{Deteccao de faces e olhos.\+deteccoes\+Faces}} = detector\+Facil.\+detect\+Multi\+Scale(img\+Cinza,scale\+Factor= 1.\+09,min\+Neighbors=10,min\+Size=(35,35),max\+Size=(150,150))
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01faces_01e_01olhos_a79d25c6116f309b5b3cdca18f235a739}{Deteccao de faces e olhos.\+deteccoes\+Olhos}} = detector\+Olhos.\+detect\+Multi\+Scale(img\+Cinza,scale\+Factor= 1.\+09,min\+Neighbors=10,min\+Size=(15,15),max\+Size=(70,70))
+\end{DoxyCompactItemize}

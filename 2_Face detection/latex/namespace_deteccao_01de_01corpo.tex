@@ -1,0 +1,40 @@
+\hypertarget{namespace_deteccao_01de_01corpo}{}\doxysection{Deteccao de corpo Namespace Reference}
+\label{namespace_deteccao_01de_01corpo}\index{Deteccao de corpo@{Deteccao de corpo}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01corpo_ab2e4a4873896231492b2c74131ad1dc4}{classificadore}} = cv.\+Cascade\+Classifier(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/fullbody.\+xml\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01corpo_a698d7f58d862a2669e0aeeea5bd88f5f}{imagem\+Original}} = cv.\+imread(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/Images/people3.\+jpg\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01corpo_a5d5b23511fc67e9ae8afc28dbeefcc7f}{imgem\+Cinza}} = cv.\+cvt\+Color(\mbox{\hyperlink{namespace_deteccao_01de_01corpo_a698d7f58d862a2669e0aeeea5bd88f5f}{imagem\+Original}},cv.\+COLOR\+\_\+\+BGR2\+GRAY)
+\item 
+cv \mbox{\hyperlink{namespace_deteccao_01de_01corpo_a6c32ced0773b58a34d4084d6db2b9a20}{corpor\+Identificado}} = classificadore.\+detect\+Multi\+Scale(\mbox{\hyperlink{namespace_deteccao_01de_01corpo_a698d7f58d862a2669e0aeeea5bd88f5f}{imagem\+Original}}, scale\+Factor=1.\+001,min\+Neighbors=7,flags=None,min\+Size=(60,60),max\+Size=(150,200))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_deteccao_01de_01corpo_ab2e4a4873896231492b2c74131ad1dc4}\label{namespace_deteccao_01de_01corpo_ab2e4a4873896231492b2c74131ad1dc4}} 
+\index{Deteccao de corpo@{Deteccao de corpo}!classificadore@{classificadore}}
+\index{classificadore@{classificadore}!Deteccao de corpo@{Deteccao de corpo}}
+\doxysubsubsection{\texorpdfstring{classificadore}{classificadore}}
+{\footnotesize\ttfamily cv Deteccao de corpo.\+classificadore = cv.\+Cascade\+Classifier(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/fullbody.\+xml\char`\"{})}
+
+\mbox{\Hypertarget{namespace_deteccao_01de_01corpo_a6c32ced0773b58a34d4084d6db2b9a20}\label{namespace_deteccao_01de_01corpo_a6c32ced0773b58a34d4084d6db2b9a20}} 
+\index{Deteccao de corpo@{Deteccao de corpo}!corporIdentificado@{corporIdentificado}}
+\index{corporIdentificado@{corporIdentificado}!Deteccao de corpo@{Deteccao de corpo}}
+\doxysubsubsection{\texorpdfstring{corporIdentificado}{corporIdentificado}}
+{\footnotesize\ttfamily cv Deteccao de corpo.\+corpor\+Identificado = classificadore.\+detect\+Multi\+Scale(\mbox{\hyperlink{namespace_deteccao_01de_01corpo_a698d7f58d862a2669e0aeeea5bd88f5f}{imagem\+Original}}, scale\+Factor=1.\+001,min\+Neighbors=7,flags=None,min\+Size=(60,60),max\+Size=(150,200))}
+
+\mbox{\Hypertarget{namespace_deteccao_01de_01corpo_a698d7f58d862a2669e0aeeea5bd88f5f}\label{namespace_deteccao_01de_01corpo_a698d7f58d862a2669e0aeeea5bd88f5f}} 
+\index{Deteccao de corpo@{Deteccao de corpo}!imagemOriginal@{imagemOriginal}}
+\index{imagemOriginal@{imagemOriginal}!Deteccao de corpo@{Deteccao de corpo}}
+\doxysubsubsection{\texorpdfstring{imagemOriginal}{imagemOriginal}}
+{\footnotesize\ttfamily cv Deteccao de corpo.\+imagem\+Original = cv.\+imread(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/Images/people3.\+jpg\char`\"{})}
+
+\mbox{\Hypertarget{namespace_deteccao_01de_01corpo_a5d5b23511fc67e9ae8afc28dbeefcc7f}\label{namespace_deteccao_01de_01corpo_a5d5b23511fc67e9ae8afc28dbeefcc7f}} 
+\index{Deteccao de corpo@{Deteccao de corpo}!imgemCinza@{imgemCinza}}
+\index{imgemCinza@{imgemCinza}!Deteccao de corpo@{Deteccao de corpo}}
+\doxysubsubsection{\texorpdfstring{imgemCinza}{imgemCinza}}
+{\footnotesize\ttfamily cv Deteccao de corpo.\+imgem\+Cinza = cv.\+cvt\+Color(\mbox{\hyperlink{namespace_deteccao_01de_01corpo_a698d7f58d862a2669e0aeeea5bd88f5f}{imagem\+Original}},cv.\+COLOR\+\_\+\+BGR2\+GRAY)}
+

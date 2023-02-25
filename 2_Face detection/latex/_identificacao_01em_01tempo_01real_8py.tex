@@ -1,0 +1,28 @@
+\hypertarget{_identificacao_01em_01tempo_01real_8py}{}\doxysection{Identificacao em tempo real.\+py File Reference}
+\label{_identificacao_01em_01tempo_01real_8py}\index{Identificacao em tempo real.py@{Identificacao em tempo real.py}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real}{Identificacao em tempo real}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+cv \mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_a211feb8823600c87a72510ef36aa6c68}{Identificacao em tempo real.\+identificador\+Faces}} = cv.\+Cascade\+Classifier(\char`\"{}/Users/Pedro\+Vitor\+Pereira/Library/Mobile Documents/com$\sim$apple$\sim$\+Cloud\+Docs/Documents/Git\+Hub/Projetos-\/Python/Visão Computacional/2\+\_\+\+Detectação de Faces/Haarcascade/haarcascade\+\_\+frontalface\+\_\+default.\+xml\char`\"{})
+\item 
+cv \mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_a3ced0fc86835f8a3274c3e0d422180b7}{Identificacao em tempo real.\+captura\+Imagens}} = cv.\+Video\+Capture(0)
+\item 
+\mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_a807c713a2880c72deb4d4a0e4dad7a40}{Identificacao em tempo real.\+status}}
+\item 
+\mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_ab6c50e6735f62d9b82f8559a2fa5c8df}{Identificacao em tempo real.\+frame}}
+\item 
+cv \mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_a27894f26255d95eb230256188c3f26c0}{Identificacao em tempo real.\+frame\+Cinza}} = cv.\+cvt\+Color(frame\mbox{[}105\+:550,500\+:850\mbox{]}, cv.\+COLOR\+\_\+\+BGR2\+GRAY)
+\item 
+\mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_a188ec26d3a28f9edbbd21e7d80dd3ad2}{Identificacao em tempo real.\+try}} \+:
+\item 
+cv \mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_ad627482a62dd414844b3f184e3fecb6b}{Identificacao em tempo real.\+faces\+Identificadas}} = identificador\+Faces.\+detect\+Multi\+Scale(frame\+Cinza,scale\+Factor=1.\+2, min\+Neighbors=5, min\+Size=(150,150))
+\item 
+\mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_a172d53b81799d955fd14cdb4a15ec6c6}{Identificacao em tempo real.\+except}} \+:
+\item 
+cv \mbox{\hyperlink{namespace_identificacao_01em_01tempo_01real_a431e1150c195f85779ec81f1fe833070}{Identificacao em tempo real.\+key}} = cv.\+wait\+Key(5)
+\end{DoxyCompactItemize}
